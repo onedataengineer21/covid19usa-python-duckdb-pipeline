@@ -1,0 +1,14 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+duckdb = "==0.9.2"
+numpy = "==1.26.4"
+pandas = "==2.0.3"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"
