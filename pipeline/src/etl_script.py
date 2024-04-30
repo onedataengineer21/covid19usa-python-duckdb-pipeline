@@ -3,7 +3,6 @@ import pandas as pd
 import os
 from pathlib import Path
 import duckdb
-import numpy as np
 import sys
 
 current_working_directory = os.getcwd()
@@ -35,7 +34,7 @@ def extract_data(dataset_path):
     return covid
 
 
-def transform(df_list, statename):
+def transform(df_list : list, statename : str) -> DataFrame:
     """
     Transform the dataframes by concatinating all the given dataframes
     Filter the dataframe for the given statename
